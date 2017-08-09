@@ -12,10 +12,10 @@ export default {
 
 运行时生成js如截图所示：
 
-![问题示例](https://github.com/cinos1/vuxdemo/blob/master/img/bug.jpg)
+![问题示例](./img/bug.jpg)
 
 ## 2、去掉多余组件引时：
 
 运行时生成js如截图所示：
 
-![问题示例](https://github.com/cinos1/vuxdemo/blob/master/img/ok.jpg)
+![问题示例](./img/ok.jpg)
