@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+img,
+body,
+button,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+li,
+menu,
+ol,
+p,
+textarea,
+ul,
+figure,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+li,
+ul,
+dl,
+dt,
+dd {
+  list-style: none
+}
+
+b,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+th,
+td {
+  font-weight: 400;
+  font-style: normal
+}
+
+body,
+button,
+input,
+select,
+textarea,
+img {
+  font: 400 0.24rem/1.5 "microsoft yahei", helvetica, verdana, san-serif;
+  outline: 0;
+  color: #000;
+}
+
+button,
+input[type=button],
+input[type=password],
+input[type=submit],
+input[type=text],
+textarea {
+  -webkit-appearance: none
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #5c5658
+}
+
+.img img,
+video {
+  vertical-align: middle
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.regloin {
+  width: 100%;
+  position: absolute;
+  top: 3.3rem;
+  background: #fff;
+  z-index: 3;
+  border-bottom: 1px solid #ccc;
+}
+
+.oLi {
+  width: 30%;
+  float: left;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  border: 1px solid #ccc;
+  margin-left: 2%;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+}
+
+ .regloin .exit {
+  width: 50%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  background: #fff;
+  margin-top: 0.5rem;
+  float: left;
+  font-size: 0.7rem;
+}
+
+ .regloin .subMit {
+  width: 50%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  background: #e30d25;
+  color: #fff;
+  margin-top: 0.5rem;
+  float: right;
+  font-size: 0.7rem;
+}
