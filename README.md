@@ -1,6 +1,7 @@
 # rentnewhouse
 
-> A Vue.js project
+> 重现vux引入未使用组件导致js编译过大问题
+
 
 ## Build Setup
 
