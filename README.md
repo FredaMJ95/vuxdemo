@@ -1,22 +1,16 @@
-# rentnewhouse
+# 重现vux引入未使用组件导致js编译过大问题
+## 1、引入多余组件时：
 
-> 重现vux引入未使用组件导致js编译过大问题
+` import{ViewBox} from 'vux'
+export default {
+     components: {
+        ViewBox
+    }`
 
+运行时生成js如截图所示：
+![问题示例](https://github.com/cinos1/vuxdemo/blob/master/img/bug.jpg)
 
-## Build Setup
+## 2、去掉多余组件引时：
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+运行时生成js如截图所示：
+![问题示例](https://github.com/cinos1/vuxdemo/blob/master/img/ok.jpg)
