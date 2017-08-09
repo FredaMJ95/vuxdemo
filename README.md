@@ -2,6 +2,7 @@
 ## 1、引入多余组件时：
 
 ` import{ViewBox} from 'vux'
+
 export default {
      components: {
         ViewBox
