@@ -1,7 +1,9 @@
 <template>
     <div>
         <transition :name="'vux-pop-' + (direction === 'forward' ? 'in' : 'out')">
-            <router-view class="router-view"></router-view>
+            <keep-alive>
+                <router-view class="router-view"></router-view>
+            </keep-alive>
         </transition>
          <buttonGroup></buttonGroup> 
     </div>

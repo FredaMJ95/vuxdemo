@@ -34,7 +34,7 @@ export default {
         },
         // 路由到个人中心
         personalCenter() {
-            this.$router.push('personalCenter');
+            this.$router.push('second');
             this.activeTab = 2;
         }
     },

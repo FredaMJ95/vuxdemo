@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 const index = resolve => require(['../views/index'], resolve)
 const first = resolve => require(['../views/first'], resolve)
+const second = resolve => require(['../views/second'], resolve)
 
 export default new Router({
     routes: [{
@@ -20,6 +21,10 @@ export default new Router({
                 path: '/first',
                 name: 'first',
                 component: first
+            }, {
+                path: '/second',
+                name: 'second',
+                component: second
             }]
         }
     ]
