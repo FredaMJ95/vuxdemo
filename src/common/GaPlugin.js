@@ -1,5 +1,5 @@
 import axios from 'axios'
-export default  class {
+export default class {
 
     constructor() {
 
@@ -7,9 +7,9 @@ export default  class {
 
     // INTERFACE = " http://www.guoanfamily.com/order/";
     //测试环境
-   
+
     INTERFACE = " http://192.168.1.104:8090/order/";
-  
+
     IMAGE_PATH = "http://Img.guoanfamily.com/";
     // UPLOAD_IMAGE = `http://172.16.4.12:8082/agenthouseWeb/CommonController/uploadFile`;
 
@@ -74,7 +74,7 @@ export default  class {
     /*------------------添加vue实例方法------------------*/
     installPrototype(Vue) {
 
-        
+
         /**
          * get请求
          * @param url
@@ -82,7 +82,7 @@ export default  class {
          */
         Vue.prototype.get = url => {
             let token = localStorage.getItem(token);
-            
+
 
             return fetch(this.INTERFACE + url, {
                 method: 'get',
@@ -108,7 +108,7 @@ export default  class {
 
             return fetch(this.INTERFACE + url, {
                 method: 'post',
-                headers: { "Content-Type": "application/json","token":"token"},
+                headers: { "Content-Type": "application/json", "token": "token" },
                 body: JSON.stringify(data),
             }).then(function(response) {
                 return response.json();
@@ -119,8 +119,5 @@ export default  class {
                 console.error(e);
             })
         };
-
-      
-  
     }
 }

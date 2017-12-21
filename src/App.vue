@@ -1,14 +1,23 @@
 <template>
-  <div id="app">
+  <div id="app" style="height:100%">
+    <view-box ref="viewBox" body-padding-top="46px" body-padding-bottom="55px">
+      <x-header
+      style="width:100%;position:absolute;left:0;top:0;z-index:100;"
+      ></x-header>
        <transition :name="'vux-pop-' + (direction === 'forward' ? 'in' : 'out')">  
         <router-view class="router-view"></router-view>
        </transition> 
+    </view-box>
   </div>
 </template>
 
 <script>
+import {ViewBox, XHeader} from 'vux'
 export default {
   name: 'app',
+  components:{
+    ViewBox,XHeader
+  },
   data() {
     return {
       activeTab: 0,
@@ -30,10 +39,10 @@ export default {
 
   computed: {
     getHomeImg() {
-      return this.activeTab === 0 ? "../static/img/index1.png" : "../static/img/index.png"
+      return this.activeTab === 0 ? "./static/img/index1.png" : "./static/img/index.png"
     },
     getPersonImg() {
-      return this.activeTab === 2 ? "../static/img/personCenter1.png" : "../static/img/personCenter.png"
+      return this.activeTab === 2 ? "./static/img/personCenter1.png" : "./static/img/personCenter.png"
     }
   }
 }
@@ -41,8 +50,17 @@ export default {
 
 <style lang="less">
 @import '~vux/src/styles/reset.less';
+@import '~vux/src/styles/1px.less';
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-overflow-scrolling: touch;
+}
 .router-view {
   width: 100%;
+  top: 46px;
 }
 
 .vux-pop-out-enter-active,
@@ -52,7 +70,7 @@ export default {
   will-change: transform;
   transition: all 500ms;
   height: 100%;
-  // top: 46px;
+  top: 46px;
   position: absolute;
   backface-visibility: hidden;
   perspective: 1000;

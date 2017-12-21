@@ -1,5 +1,6 @@
 <template>
     <div style="background:#fff;">
+        
         <!--轮播图下面的导航栏  -->
         <flexbox>
             <flexbox-item @click.native="newHouse">
@@ -168,8 +169,9 @@ export default {
 .navigation_names {
     text-align: center;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 14px;
     background: #fff;
+    
 }
 
 .navigation_img1 {
